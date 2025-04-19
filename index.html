@@ -1,3 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Moein Mirzaeian's Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 <body>
-    <h1>hello</h1>
+  <header id="home">
+    <div class="container">
+      <h1>Mohammad Moein Mirzaeian</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Weblog</h2>
+      <p>I'm Mohammad Moein Mirzaeian — a curious mind exploring tech, life, and everything in between.</p>
+    </div>
+  </section>
+
+  <div class="container main-content">
+    <main>
+      <article class="post">
+        <h2>First Blog Post</h2>
+        <p class="date">April 19, 2025</p>
+        <p>Hey there! This is my very first post. I'm diving into web development and sharing my journey, thoughts, and ideas here. Stay tuned for more!</p>
+        <div class="more-text" style="display:none;">
+          <p>In this post, I’ll also talk about how I got started in tech and why I decided to build this blog. It’s a way for me to keep learning and share the journey with you.</p>
+        </div>
+        <a href="javascript:void(0);" class="read-more" onclick="toggleText(this)">Read More</a>
+      </article>
+
+      <article class="post">
+        <h2>Why I Love Coding</h2>
+        <p class="date">April 17, 2025</p>
+        <p>There’s something magical about solving problems with code. It’s like learning a new language that speaks to machines — and I’m here for it!</p>
+        <div class="more-text" style="display:none;">
+          <p>Every time I write a few lines of code and see it come to life, it gives me energy. Whether it’s a personal project or a small fix, the joy is real!</p>
+        </div>
+        <a href="javascript:void(0);" class="read-more" onclick="toggleText(this)">Read More</a>
+      </article>
+    </main>
+
+    <aside id="about">
+      <div class="sidebar-box">
+        <h3>About Me</h3>
+        <p>I'm a university student passionate about software development, electronics, and continuous learning. This blog is my personal space to reflect, explore, and grow.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://github.com/">My GitHub</a></li>
+          <li><a href="#">My LinkedIn</a></li>
+          <li><a href="#">My Portfolio</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer id="contact">
+    <p>Made with ❤️ by Mohammad Moein Mirzaeian &copy; 2025</p>
+  </footer>
+
+  <script>
+    function toggleText(link) {
+      const moreText = link.previousElementSibling;
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        link.textContent = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        link.textContent = "Read More";
+      }
+    }
+  </script>
 </body>
+</html>
